@@ -1,0 +1,19 @@
+<form class="center" [formGroup]="myForm">
+  <!-- ดึงข้อมูลใน Form มาแสดง -->
+  Value: {{ myForm.value | json }}
+  <hr>
+
+  <!-- กำหนดชื่อของ formControlName เพื่อใช้กำหนดชื่อของ formControl -->
+  <label>
+    Email :
+    <input type="text" placeholder="email" formControlName="email">
+  </label>
+
+  <br>
+
+  <label>
+    Password :
+    <input type="password" placeholder="password" formControlName="password">
+  </label>
+
+</form>
